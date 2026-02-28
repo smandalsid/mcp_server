@@ -1,4 +1,4 @@
-from typing import Any, Optional
+from typing import Any, Optional, Union, Dict
 import httpx
 from mcp.server.fastmcp import FastMCP
 
@@ -9,7 +9,7 @@ mcp = FastMCP("weather")
 NWS_API_BASE = "https://api.weather.gov"
 USER_AGENT = "weather-app/1.0"
 
-async def make_nws_request(url: str) -> Optional[dict[str, None]]:
+async def make_nws_request(url: str) -> Optional[dict[str, Optional[str]]]:
 
     headers = {
         "User-Agent": USER_AGENT,
@@ -39,7 +39,7 @@ def format_alert(feature: dict) -> str:
     """
 
 @mcp.tool()
-async def get_alerts(state: str) -> str:
+async def get_alerts(state: str) -> Union[Dict, str]:
     """
         Get weather alerts for a US state.
 
