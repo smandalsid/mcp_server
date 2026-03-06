@@ -1,11 +1,14 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL. For example, 'https://my-bucket.s3.us-west-2.amazonaws.com' should return 'us-west-2'."
+    "task": "Parse an AWS S3 bucket name from an S3 URI (e.g., s3://my-bucket/path/to/object) and extract just the bucket name",
+    "format": "regex"
   },
   {
-    "task": "Create a JSON object representing an IAM policy that allows a user to read and write objects in an S3 bucket named 'my-data-bucket'."
+    "task": "Create a JSON configuration object for an AWS Lambda function that specifies the function name, runtime (Python 3.11), timeout (60 seconds), and memory size (256 MB)",
+    "format": "json"
   },
   {
-    "task": "Write a regular expression that matches valid AWS Lambda function names. Function names can contain letters, numbers, hyphens, and underscores, must be between 1-64 characters, and cannot start with a hyphen."
+    "task": "Write a Python function that takes an AWS region code as input and returns True if it's a valid AWS region, False otherwise. Use a hardcoded list of common regions",
+    "format": "python"
   }
 ]
