@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "70",
+      "goal": "Marathon training with carb-loading for endurance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus snacks for one full day",
+      "Emphasizes carbohydrates (55-65% of calories) to support marathon training",
+      "Total daily calories appropriate for a 70kg endurance athlete (approximately 2800-3200 calories)",
+      "Meals are practical and compact in description format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carb-loading focus, with no dietary restrictions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "82 kg",
+      "goal": "Build muscle and strength for competitive weightlifting",
+      "restrictions": "Vegetarian (no meat, poultry, or fish)"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with at least 4 meals/snacks",
+      "Provides minimum 140g protein from vegetarian sources with meals strategically timed around training",
+      "Includes pre-training and post-training nutrition recommendations",
+      "All meals are vegetarian-compliant"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-sport athlete (weightlifter) emphasizing protein intake and specific meal timing around training, with a vegetarian dietary constraint"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Maintain weight for middleweight boxing competition while maximizing energy and recovery",
+      "restrictions": "Allergic to nuts and shellfish"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 2,400-2,600 calories distributed across 4-5 meals",
+      "Includes adequate protein (minimum 120g) for muscle recovery without exceeding weight limit",
+      "Contains no nuts or shellfish products",
+      "Specifies hydration strategy appropriate for weight-class sport"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete in a weight-class sport (boxer) requiring precise caloric control and hydration strategy, with an allergy to nuts and shellfish"
+  }
+]
