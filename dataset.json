@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI (e.g., s3://my-bucket/path/to/object) and extract just the bucket name",
-    "format": "regex"
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/object') and extract only the bucket name",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly extract bucket names from various S3 URIs, handling different path depths and object names while only capturing the bucket portion"
   },
   {
-    "task": "Create a JSON configuration object for an AWS Lambda function that specifies the function name, runtime (Python 3.11), timeout (60 seconds), and memory size (256 MB)",
-    "format": "json"
+    "task": "Create a JSON configuration object for an AWS Lambda function that specifies the function name, runtime (Python 3.11), memory (256 MB), timeout (30 seconds), and required environment variables for API_KEY and DB_HOST",
+    "format": "json",
+    "solution_criteria": "The JSON should be valid, include all required fields in proper structure, use correct AWS Lambda configuration keys, and include the specified environment variables"
   },
   {
-    "task": "Write a Python function that takes an AWS region code as input and returns True if it's a valid AWS region, False otherwise. Use a hardcoded list of common regions",
-    "format": "python"
+    "task": "Write a Python function that takes an AWS CloudWatch log entry (as a dictionary) and returns True if the log level is 'ERROR' or 'CRITICAL', otherwise returns False",
+    "format": "python",
+    "solution_criteria": "The function should correctly identify ERROR and CRITICAL log levels, handle case variations, and gracefully handle missing log level keys"
   }
 ]
