@@ -1,0 +1,17 @@
+{
+	"servers": {
+		"my-sticky-notes": {
+			"type": "stdio",
+			"command": "uv",
+			"args": [
+				"run",
+				"advanced_mcp/main.py"
+			]
+		},
+		"http-mcp": {
+			"url": "https://n1c2cts0-8000.inc1.devtunnels.ms/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
